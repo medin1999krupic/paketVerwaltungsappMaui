@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"
+             BackgroundColor="{StaticResource NormalBackgroundColor}"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="true"
+             x:Class="TabbedAppVorlage.Views.ItemDetailPage">
+    <StackLayout Spacing="5" Padding="15">
+        <Label Text="Vorschau" FontFamily="Roboto" HorizontalOptions="FillAndExpand" WidthRequest="220" FontSize="24" TextColor="{StaticResource NormalHeaderText}" Margin="10,20,0,0"/>
+        
+        <Label Text="Titel:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}"/>
+        <Label Text="{Binding Titel}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}" Margin="0, 0, 0, 15"/>
+
+        <Label Text="Typ:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}" />
+        <Label Text="{Binding Typ}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}"/>
+
+        <Label Text="AnnahmeDurch:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}" />
+        <Label Text="{Binding AnnahmeDurch}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}"/>
+
+        <Label Text="VonAbsenderAdresse:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}" />
+        <Label Text="{Binding VonAbsenderAdresse}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}"/>
+
+        <Label Text="AnEmpfaengerAdresse:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}" />
+        <Label Text="{Binding AnEmpfaengerAdresse}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}"/>
+
+        <Label Text="LieferUnternehmen:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}" />
+        <Label Text="{Binding LieferUnternehmen}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}"/>
+
+        <Label Text="Zustand:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}" />
+        <Label Text="{Binding Zustand}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}"/>
+
+        <Label Text="Gewicht:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}" />
+        <Label Text="{Binding Gewicht}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}"/>
+
+        <Label Text="Stueckzahl:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}" />
+        <Label Text="{Binding Stueckzahl}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}"/>
+
+        <Label Text="DatumUhrzeit:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}" />
+        <Label Text="{Binding DatumUhrzeit}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}"/>
+
+        <Label Text="AktuellerStatus:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}" />
+        <Label Text="{Binding AktuellerStatus}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}"/>
+
+        <Label Text="Description:" FontFamily="Roboto" FontSize="12" TextColor="{StaticResource NormalLightText}" />
+        <Label Text="{Binding Description}" FontFamily="Roboto" FontSize="14" TextColor="{StaticResource NormalText}"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dxg="clr-namespace:DevExpress.Maui.DataGrid;assembly=DevExpress.Maui.DataGrid"
+             Title="{Binding Title}"
+             IconImageSource="grid"
+             x:Class="TabbedAppVorlage.Views.DataGridPage">    
+    <ContentPage.Content>
+        <dxg:DataGridView x:Name="grid" ItemsSource="{Binding Items}">
+            <dxg:DataGridView.Columns>
+                <dxg:TextColumn FieldName="Titel" Caption="Titel" />
+
+                <dxg:TextColumn FieldName="Typ" Caption="Typ" />
+                <dxg:TextColumn FieldName="AnnahmeDurch" Caption="AnnahmeDurch" />
+                <dxg:TextColumn FieldName="VonAbsenderAdresse" Caption="VonAbsenderAdresse" />
+                <dxg:TextColumn FieldName="AnEmpfaengerAdresse" Caption="AnEmpfaengerAdresse" />
+                <dxg:TextColumn FieldName="LieferUnternehmen" Caption="LieferUnternehmen" />
+                <dxg:TextColumn FieldName="Zustand" Caption="Zustand" />
+                <dxg:TextColumn FieldName="Gewicht" Caption="Gewicht" />
+                <dxg:TextColumn FieldName="Stueckzahl" Caption="Stueckzahl" />
+                <dxg:TextColumn FieldName="DatumUhrzeit" Caption="DatumUhrzeit" />
+                <dxg:TextColumn FieldName="AktuellerStatus" Caption="AktuellerStatus" />
+
+                <dxg:TextColumn FieldName="Description" Caption="Description" />
+                <dxg:DateColumn FieldName="StartTime" Caption="Time" DisplayFormat="h:mm tt" />
+            </dxg:DataGridView.Columns>
+        </dxg:DataGridView>
+    </ContentPage.Content>
+</ContentPage>

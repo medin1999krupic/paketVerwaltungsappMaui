@@ -1,0 +1,44 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"
+             IconImageSource="info"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+             xmlns:dxcv="clr-namespace:DevExpress.Maui.CollectionView;assembly=DevExpress.Maui.CollectionView"
+             xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+             xmlns:dxdf="clr-namespace:DevExpress.Maui.DataForm;assembly=DevExpress.Maui.Editors"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="true"
+             x:Class="TabbedApp.Views.AboutPage">
+    <!--<ContentPage.ToolbarItems>
+        --><!-- Beispiel Button.    Anzeige Button 'Add' der Seite 1. --><!--
+        <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />
+
+    </ContentPage.ToolbarItems>-->
+    
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid RowDefinitions="100,*,Auto">
+            <Grid>
+                <Image Source="logo_rocon" HorizontalOptions="FillAndExpand" Aspect="AspectFit" WidthRequest="220" Margin="0, 5, 0, 0" />
+                <!--<StackLayout VerticalOptions="Center" Margin="0,10,0,10" >
+                    <Label Text=".NET MAUI Controls" FontFamily="Univia-Pro" FontSize="20" HorizontalOptions="Center" TextColor="{StaticResource NormalHeaderText}"/>
+                    <Label Text="from DevExpress" FontFamily="Univia-Pro" FontSize="14" HorizontalOptions="Center" TextColor="{StaticResource NormalHeaderText}"/>
+                </StackLayout>-->
+            </Grid>
+            <Grid Grid.Row="1" RowDefinitions="Auto, Auto, Auto" Padding="25,25,25,15" RowSpacing="10">
+                <Label Grid.Row="0" Text="Paket Verwaltungs Applikation" FontFamily="Roboto-Bold" FontSize="18" TextColor="{StaticResource NormalText}"/>
+                <Label Grid.Row="1" Text="Unsere Paket Verwaltungs Applikation ist ein neues rocon Produkt, dass zur Verwaltung, Protokolierung und Annahme von Paketen dient." FontFamily="Roboto" FontSize="16" TextColor="{StaticResource NormalText}"/>
+                <Label Grid.Row="2" Text="Sie wurde passend für die Benutzung im Altag und mit dem neuem '.Net Maui' Entwicklung umgesetzt. Für weitere Informationen stehen wir Ihnen gerne zur Verfügung. Weiteres können Sie auf unserer Webseite lesen." FontFamily="Roboto" FontSize="16" TextColor="{StaticResource NormalText}" Padding="0,0,0,7"/>
+                <!--<Label Grid.Row="3" Text="Für weitere Informationen stehen wir Ihnen gerne zur Verfügung." FontFamily="Roboto" FontSize="16" TextColor="{StaticResource NormalText}" />
+                <Label Grid.Row="4" Text="Weiteres können Sie auf unserer Webseite lesen." FontFamily="Roboto" FontSize="16" TextColor="{StaticResource NormalText}" >-->
+
+            </Grid>
+            <Button Grid.Row="2" Margin="25,20,25,20"
+                    Text="Zur Webseite"
+                    Style="{StaticResource PrimaryButton}"
+                    Command="{Binding OpenWebCommand}"/>
+        </Grid>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
